@@ -62,7 +62,7 @@ jobs:
         run: composer install --prefer-dist --no-interaction --no-progress
 
       - name: Execute tests
-        run: vendor/bin/phpunit --coverage-clover=coverage.xml
+        run: vendor/bin/phpunit --coverage-text --coverage-clover=coverage.xml
 
       # - name: Upload coverage
       #  uses: codecov/codecov-action@v2
